@@ -12,7 +12,7 @@
         android:layout_height="25sp"
         android:layout_marginTop="15sp"
         android:gravity="center"
-        android:text="Calculator"
+        android:text="@string/in_app_name"
         android:textColor="#A0A0A0"
         android:textSize="20sp" />
 
@@ -28,10 +28,7 @@
             android:layout_height="match_parent"
             android:layout_width="match_parent"
             android:layout_marginTop="15sp"
-            android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="12sp"
-            android:autoSizeMaxTextSize="50sp"
-            android:autoSizeStepGranularity="2sp"
+            android:textSize="26sp"
             android:gravity="end|center_vertical"
             android:maxLines="1"
             android:textColor="@color/white" />
@@ -44,10 +41,7 @@
         android:layout_height="150sp"
         android:layout_marginLeft="10sp"
         android:layout_marginRight="10sp"
-        android:autoSizeTextType="uniform"
-        android:autoSizeMinTextSize="12sp"
-        android:autoSizeMaxTextSize="70sp"
-        android:autoSizeStepGranularity="2sp"
+        android:textSize="60sp"
         android:gravity="end|center_vertical"
         android:maxLines="1"
         android:textColor="@color/white" />
