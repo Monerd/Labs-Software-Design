@@ -91,6 +91,9 @@ public class Calculator {
                 preparedStr.append('0');
             else if (sym == '-' && str.charAt(i - 1) == '(')
                 preparedStr.append('0');
+            else if (str.charAt(i) == '(' &&
+                    checkPriority(str.charAt(i - 1)) == 0)
+                preparedStr.append('*');
             preparedStr.append(sym);
         }
         return preparedStr.toString();
