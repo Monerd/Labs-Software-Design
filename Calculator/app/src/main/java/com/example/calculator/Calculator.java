@@ -53,6 +53,20 @@ public class Calculator {
         StringBuilder operand = new StringBuilder();
         Stack<Double> stack = new Stack<>();
         int priority;
+        int countNum = 0;
+        char num = ' ';
+
+        for (int i = 0; i < rev.length(); i++) {
+            if (checkPriority(rev.charAt(i)) == 0 &&
+                rev.charAt(i) != ' ') {
+                countNum++;
+                num = rev.charAt(i);
+            }
+            if (countNum > 1)
+                break;
+        }
+        if (countNum == 1)
+            return String.valueOf(num);
 
         for (int i = 0; i < rev.length(); i++) {
             priority = checkPriority(rev.charAt(i));
@@ -82,21 +96,35 @@ public class Calculator {
         }
         return String.valueOf(stack.pop());
     }
-
+    
     private static String preparingZero(String str) {
         StringBuilder preparedStr = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
             char sym = str.charAt(i);
-            if (sym == '-' && i == 0)
+            if (sym == '-' &&
+                    i == 0)
                 preparedStr.append('0');
-            else if (sym == '-' && str.charAt(i - 1) == '(')
+            else if (i >= 1 &&
+                    sym == '-' &&
+                    str.charAt(i - 1) == '(')
                 preparedStr.append('0');
-            else if (str.charAt(i) == '(' &&
-                    checkPriority(str.charAt(i - 1)) == 0)
+            else if (i >= 1 &&
+                    str.charAt(i) == '(' &&
+                    (checkPriority(str.charAt(i - 1)) == 0 ||
+                    checkPriority(str.charAt(i - 1)) == -1))
                 preparedStr.append('*');
             preparedStr.append(sym);
         }
-        return preparedStr.toString();
+        return deleteExBracket(preparedStr.toString());
+    }
+
+    private static String deleteExBracket(String str) {
+        StringBuffer preparedStr = new StringBuffer(str);
+        for (int i = 0; i < str.length(); i++) {
+            if (i >= 1 && str.charAt(i) == '(' && str.charAt(i - 1) == ')')
+                preparedStr.delete(i - 1, i);
+        }
+        return String.valueOf(preparedStr);
     }
 
     private static String preparingString(String str) {
