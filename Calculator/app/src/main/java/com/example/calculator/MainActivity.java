@@ -53,29 +53,32 @@ public class MainActivity extends AppCompatActivity {
             switch (op) {
                 case "C":
                     tmp = mathText.getText().toString();
-                    tmp = tmp.substring(0, tmp.length() - 1);
-                    mathText.setText(tmp);
+                    if (tmp.length() != 0) {
+                        tmp = tmp.substring(0, tmp.length() - 1);
+                        mathText.setText(tmp);
+                    }
                     break;
                 case "AC":
                     mathText.setText("");
                     resultField.setText("");
                     break;
                 case "=":
-                    answer = Calculator.searchResult(mathText.getText().toString());
-                    try {
-                        double doubleAnswer = Double.parseDouble(answer);
-                        long longAnswer = (long) doubleAnswer;
-                        if (longAnswer - doubleAnswer == 0)
-                            resultField.setText(String.valueOf(longAnswer));
-                        else
-                            resultField.setText(String.valueOf(doubleAnswer));
-                        mathText.setText("");
-                        answer = "";
-                        exitCalc = true;
-                        break;
-                    }
-                    catch (Exception ex) {
-                        resultField.setText("Error!");
+                    if (mathText.getText().toString().length() != 0) {
+                        answer = Calculator.searchResult(mathText.getText().toString());
+                        try {
+                            double doubleAnswer = Double.parseDouble(answer);
+                            long longAnswer = (long) doubleAnswer;
+                            if (longAnswer - doubleAnswer == 0)
+                                resultField.setText(String.valueOf(longAnswer));
+                            else
+                                resultField.setText(String.valueOf(doubleAnswer));
+                            mathText.setText("");
+                            answer = "";
+                            exitCalc = true;
+                            break;
+                        } catch (Exception ex) {
+                            resultField.setText("Error!");
+                        }
                     }
             }
         else
