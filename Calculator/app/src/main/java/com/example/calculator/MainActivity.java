@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     Boolean exitCalc = false;
     String answer = "";
     String tmp;
+    int bracket = 0;
 
     TextView mathText;
     TextView resultField;
@@ -49,18 +50,34 @@ public class MainActivity extends AppCompatActivity {
     public void onOperationClick(View view) {
         Button button = (Button) view;
         String op = button.getText().toString();
-        if (op.equals("AC") || op.equals("C") || op.equals("="))
+        if (op.equals("AC") || op.equals("C") || op.equals("=") || op.equals("(") || op.equals(")"))
             switch (op) {
                 case "C":
                     tmp = mathText.getText().toString();
                     if (tmp.length() != 0) {
                         tmp = tmp.substring(0, tmp.length() - 1);
                         mathText.setText(tmp);
+                        int countBracket = 0;
+                        for (char element : tmp.toCharArray())
+                            if (element == '(')
+                                countBracket++;
+                        bracket = countBracket;
                     }
                     break;
                 case "AC":
                     mathText.setText("");
                     resultField.setText("");
+                    bracket = 0;
+                    break;
+                case "(":
+                    mathText.append(button.getText());
+                    bracket++;
+                    break;
+                case ")":
+                    if (bracket != 0) {
+                        mathText.append(button.getText());
+                        bracket--;
+                    }
                     break;
                 case "=":
                     if (mathText.getText().toString().length() != 0) {
@@ -75,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                             mathText.setText("");
                             answer = "";
                             exitCalc = true;
+                            bracket = 0;
                             break;
                         } catch (Exception ex) {
                             resultField.setText("Error!");
