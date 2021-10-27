@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putString("OPERATION", mathText.getText().toString());
+        outState.putString("RESULT", resultField.getText().toString());
         super.onSaveInstanceState(outState);
     }
 
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         mathText.setText(savedInstanceState.getString("OPERATION"));
+        resultField.setText(savedInstanceState.getString("RESULT"));
     }
 
     public void onNumberClick(View view) {
