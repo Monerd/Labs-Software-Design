@@ -1,8 +1,11 @@
+com/example/secondlab/EditAddActivity.java
+ com.example.secondlab.EditAddActivity
 com/example/secondlab/Product.java
  com.example.secondlab.Product
-com/example/secondlab/BuildConfig.java
- com.example.secondlab.BuildConfig
 com/example/secondlab/ProductAdapter.java
  com.example.secondlab.ProductAdapter
+ com.example.secondlab.ProductAdapter$ViewHolder
 com/example/secondlab/MainActivity.java
  com.example.secondlab.MainActivity
+com/example/secondlab/BuildConfig.java
+ com.example.secondlab.BuildConfig

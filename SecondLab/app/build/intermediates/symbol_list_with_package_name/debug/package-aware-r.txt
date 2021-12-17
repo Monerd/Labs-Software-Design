@@ -1699,6 +1699,7 @@ id SYM
 id TOP_END
 id TOP_START
 id accelerate
+id accept_edit_add_activity
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -1752,6 +1753,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_product
 id alertTitle
 id aligned
 id all
@@ -1786,6 +1788,8 @@ id chip1
 id chip2
 id chip3
 id chip_group
+id choose_workshop
+id choose_workshop_input
 id chronometer
 id circle_center
 id clear_text
@@ -1841,6 +1845,7 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
+id exit_edit_add_activity
 id expand_activities_button
 id expanded_menu
 id fade
@@ -1911,6 +1916,9 @@ id material_timepicker_mode_button
 id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
+id menuGroup
+id menu_del
+id menu_edit
 id message
 id middle
 id mini
@@ -2158,6 +2166,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_edit_add
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2242,6 +2251,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu popupmenu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -2272,6 +2282,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string accept_edit_add_activity
 string add_product
 string app_name
 string appbar_scrolling_view_behavior
@@ -2282,13 +2293,20 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string count_edit_add_activity
+string del_menu
+string edit_menu
 string error_icon_content_description
+string exit_edit_add_activity
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string listItem_count
+string listItem_productName
+string listItem_workshop
 string load_products
 string material_clock_display_divider
 string material_clock_toggle_content_description
@@ -2346,8 +2364,10 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string product_edit_add_activity
 string search_menu_title
 string status_bar_notification_info_overflow
+string workshop_edit_add_activity
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -2653,6 +2673,7 @@ style TestStyleWithThemeLineHeightAttribute
 style TestStyleWithoutLineHeight
 style TestThemeWithLineHeight
 style TestThemeWithLineHeightDisabled
+style TextAddLayout
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
 style TextAppearance_AppCompat_Body2
