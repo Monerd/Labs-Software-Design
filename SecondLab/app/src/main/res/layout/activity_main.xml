@@ -8,35 +8,39 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60sp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-        android:layout_marginTop="10sp"
-        android:text="@string/number_workshop"
-        android:theme="@style/BlackButton"
-        />
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/choose_workshop_input"
+            android:layout_width="50sp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/black"
+            android:inputType="number" />
+        <Button
+            android:id="@+id/choose_workshop"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:text="@string/number_workshop"
+            android:theme="@style/BlackButton" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60sp">
         <Button
+            android:id="@+id/add_product"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="10sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
             android:text="@string/add_product"
-            android:theme="@style/BlackButton"
-            />
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="10sp"
-            android:text="@string/load_products"
             android:theme="@style/BlackButton"
             />
     </LinearLayout>

@@ -1,6 +1,8 @@
 package com.example.secondlab;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable {
     private int count;
     private int workshopNumber;
     private String productName;

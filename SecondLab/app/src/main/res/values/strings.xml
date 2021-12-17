@@ -3,4 +3,14 @@
     <string name="number_workshop">Выбрать цех</string>
     <string name="add_product">Добавить продукт</string>
     <string name="load_products">Загрузить продукцию</string>
+    <string name="listItem_workshop">Цех</string>
+    <string name="listItem_productName">Название</string>
+    <string name="listItem_count">Количество</string>
+    <string name="accept_edit_add_activity">Подтвердить</string>
+    <string name="exit_edit_add_activity">Вернуться обратно</string>
+    <string name="workshop_edit_add_activity">Номер цеха</string>
+    <string name="product_edit_add_activity">Наименование\nпродукта</string>
+    <string name="count_edit_add_activity">Количество</string>
+    <string name="edit_menu">Редактировать</string>
+    <string name="del_menu">Удалить</string>
 </resources>
