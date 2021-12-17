@@ -16,12 +16,16 @@
         "source": "/home/nikita/Документы/Programming/SD/SecondLab/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
+        "merged": "/home/nikita/Документы/Programming/SD/SecondLab/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/nikita/Документы/Programming/SD/SecondLab/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
         "merged": "/home/nikita/Документы/Programming/SD/SecondLab/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "/home/nikita/Документы/Programming/SD/SecondLab/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/nikita/Документы/Programming/SD/SecondLab/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/home/nikita/Документы/Programming/SD/SecondLab/app/src/main/res/drawable/ic_launcher_background.xml"
+        "merged": "/home/nikita/Документы/Programming/SD/SecondLab/app/build/intermediates/merged_res/debug/layout_activity_edit_add.xml.flat",
+        "source": "/home/nikita/Документы/Programming/SD/SecondLab/app/src/main/res/layout/activity_edit_add.xml"
     },
     {
         "merged": "/home/nikita/Документы/Programming/SD/SecondLab/app/build/intermediates/merged_res/debug/layout_list_item.xml.flat",
@@ -38,6 +42,10 @@
     {
         "merged": "/home/nikita/Документы/Programming/SD/SecondLab/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "/home/nikita/Документы/Programming/SD/SecondLab/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/nikita/Документы/Programming/SD/SecondLab/app/build/intermediates/merged_res/debug/menu_popupmenu.xml.flat",
+        "source": "/home/nikita/Документы/Programming/SD/SecondLab/app/src/main/res/menu/popupmenu.xml"
     },
     {
         "merged": "/home/nikita/Документы/Programming/SD/SecondLab/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
